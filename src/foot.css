@@ -1,0 +1,13 @@
+.foot-bg {
+  background-image: url('./assets/footbg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+.foot-bg > * {
+  position: relative;
+  z-index: 1;
+}

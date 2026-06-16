@@ -1,0 +1,20 @@
+.testi-bg {
+  background-image: url('./assets/kantor.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.testi-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* ganti 0.5 sesuai kebutuhan */
+  z-index: 0;
+}
+
+.testi-bg > * {
+  position: relative;
+  z-index: 1;
+}
