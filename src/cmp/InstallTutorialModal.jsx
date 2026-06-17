@@ -206,6 +206,15 @@ const InstallTutorialModal = () => {
             Screenshot di atas mengikuti tampilan asli HP Android, jadi kamu bisa cocokkan langsung.
           </p>
         </div>
+
+        <div className="px-6 pb-6">
+          <button
+            onClick={closeTutorial}
+            className="w-full rounded-xl bg-[#D40000] py-3 text-sm font-semibold text-white transition hover:bg-black active:scale-[0.98]"
+          >
+            Keluar
+          </button>
+        </div>
       </div>
     </div>
   )

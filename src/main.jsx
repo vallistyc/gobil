@@ -12,6 +12,7 @@ import Location from './sct/Location'
 import Profile from './sct/Profile'
 import Testimoni from './sct/Testimoni'
 import Cta from './sct/Cta'
+import WhatsAppFAB from './cmp/WhatsAppFAB'
 
 
 createRoot(document.getElementById('root')).render(
@@ -26,6 +27,7 @@ createRoot(document.getElementById('root')).render(
       <Testimoni />
       <Cta />
       <InstallTutorialModal />
+      <WhatsAppFAB/>
       <TutorialFAB />
     </TutorialModalProvider>
   </StrictMode>,

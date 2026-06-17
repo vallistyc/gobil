@@ -4,7 +4,8 @@ import { useTutorialModal } from "./TutorialModalContext"
 
 // Render komponen ini SEKALI saja di root app (sejajar dengan
 // <InstallTutorialModal />), bukan di setiap halaman, supaya tidak
-// dobel muncul.
+// dobel muncul. Posisinya ditumpuk di atas WhatsAppFAB (sisi kanan
+// bawah yang sama).
 const TutorialFAB = () => {
   const { openTutorial } = useTutorialModal()
 
