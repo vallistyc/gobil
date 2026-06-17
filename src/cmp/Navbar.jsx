@@ -3,7 +3,7 @@ import { Menu, X, Download } from "lucide-react";
 import Logo from '../assets/Logo.png';
 import DownloadButton from "./DownloadButton";
 
-const APK_URL = "https://pub-4f089b6f2b674ec2a2eacc94a4742125.r2.dev/gobil181-2-5%20-%20Anita%20Anitaa.apk"
+const APK_URL = "https://pub-4f089b6f2b674ec2a2eacc94a4742125.r2.dev/gobil.apk"
 
 const ayoDownload = () => {
   const link = document.createElement("a")
