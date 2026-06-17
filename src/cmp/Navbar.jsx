@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full top-0 left-0 bg-white shadow-md z-50" aria-label="Primary navigation">
-      <div className="mx-auto px-4 sm:px-6 lg:px-10 py-3 flex justify-between items-center">
+      <div className="mx-auto px-4 sm:px-6 lg:px-10 py-2 flex justify-between items-center">
         
         {/* Logo */}
         <a href="#home" aria-label="Elsa home">

@@ -8,7 +8,7 @@ const Cta = () => {
   return (
     <section id="mitra" className='testi-bg pt-10 flex flex-col'>
         <div
-        className="flex flex-col sm:flex-row justify-center items-center gap-4 px-4 sm:px-8 md:pb-10 pb-0">
+        className="flex flex-col sm:flex-row justify-center items-center gap-4 px-4 sm:px-8 pb-0">
             {/* CTA CONTAINER */}
             <div className='flex flex-col items-center sm:items-start gap-5 text-center sm:text-left'>
                 <div>

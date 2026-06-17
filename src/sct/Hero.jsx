@@ -12,14 +12,14 @@ import Emp2 from '../assets/EmpPlain.svg'
 
 const Hero = () => {
   return (
-    <section id="beranda" className='relative overflow-hidden bg-[#FFF9EB] pt-24 md:pt-28 lg:pt-10 flex flex-col-reverse lg:flex-row justify-between items-center gap-8 px-4 sm:px-8 lg:px-30 pb-10 lg:pb-0'>
+    <section id="beranda" className='relative overflow-hidden bg-[#FFF9EB] pt-10 md:pt-10 lg:pt-10 flex flex-col-reverse lg:flex-row justify-between items-center gap-8 px-4 sm:px-8 lg:px-30 pb-10 lg:pb-0'>
         {/* Gradient */}
         <div className='top-24 right-0 sm:right-12 lg:right-30 absolute w-64 sm:w-100 h-48 sm:h-64 rounded-full bg-gradient-to-br from-orange-300 to-yellow-200 blur-3xl opacity-50' />
         <div className='-left-20 sm:-left-5 -top-5 absolute w-56 sm:w-64 h-56 sm:h-64 rounded-full bg-gradient-to-l from-orange-400 to-yellow-200 blur-3xl opacity-70'/>        
 
         {/* Decorations */}
-        <img src={Arrow1} alt="decoration arrow" className='hidden sm:block text-[#FF6200] absolute top-50 left-10 w-16 lg:w-20 rotate-50' />
-        <img src={Emp1} alt="decoration emphasis" className='hidden sm:block absolute top-20 w-12 lg:w-15 right-12 lg:right-35 rotate-100' />
+        <img src={Arrow1} alt="decoration arrow" className='hidden sm:block text-[#FF6200] absolute lg:left-10 lg:top-50 md:top-50 md:left-10 w-16 lg:w-20 rotate-50' />
+        <img src={Emp1} alt="decoration emphasis" className='hidden sm:block absolute lg:top-40 top-20 w-12 lg:w-20 right-12 lg:right-35 rotate-100' />
 
         {/* Left Content */}
         <div className='z-10 flex flex-col items-center lg:items-start gap-5 font-outfit text-xl sm:text-2xl font-semibold text-center lg:text-left'>
@@ -46,7 +46,7 @@ const Hero = () => {
         </div>
 
         {/* Right Content */}
-        <div className='z-10 w-full max-w-[320px] sm:max-w-[420px] lg:max-w-none lg:flex-1'>
+        <div className='z-10 w-full max-w-[320px] sm:max-w-[420px] lg:max-w-[50%] lg:flex-1'>
             <img src={HeroImage} alt="Hero Image" className='w-full h-auto object-contain' />
         </div>
     </section>

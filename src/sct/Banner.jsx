@@ -15,7 +15,7 @@ const Banner = () => {
   return (
     <div className='flex flex-col h-fit bg-gray-900 px-4 sm:px-8 lg:px-10 py-5 gap-4 justify-center'>
         {/* Title */}
-        <p className='font-outfit font-regular text-2xl text-white text-center'>
+        <p className='font-outfit font-regular text-2xl lg:text-4xl text-white text-center'>
             Mitra <span className='font-playfair font-bold italic'>Kami</span>
         </p>
 

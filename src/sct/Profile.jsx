@@ -38,7 +38,7 @@ const Profile = () => {
                 <p className='text-left sm:text-justify text-[#5A5A5A] font-normal max-w-none lg:max-w-sm text-sm sm:text-base lg:text-sm'>
                     <span className='font-bold'>Go-Bil</span> adalah aplikasi jasa transportasi yang berbasis di Kawasan Lamongan Pantura. Melalui Aplikasi ini, Anda dapat memesan <span className='font-bold'>Deliv Makanan</span>, <span className='font-bold'>Ojek</span>, & <span className='font-bold'>Antar Barang</span> hanya melalui layar ponsel. <span className='font-bold'>Go-Bil</span> bukan hanya model bisnis semata, melainkan model solusi untuk memberdayakan <span className='font-bold'>UMKM Lokal</span> dan menciptakan lapangan kerja untuk semua kalangan mulai dari <span className='font-bold'>Anak SMA</span>.
                 </p>
-                <ul className='grid grid-cols-1 sm:grid-cols-3 gap-3 items-start w-full'>
+                <ul className='grid grid-cols-3 gap-2 sm:gap-3 items-start w-full'>
                     {stats.map((item)=>(
                         <li key={item.h1} className='flex w-full'>
                             <StatisticCard h1={item.h1} h2={item.h2} />
