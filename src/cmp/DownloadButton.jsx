@@ -2,7 +2,7 @@ import React from 'react'
 import { Download } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
-const APK_URL = "https://pub-4f089b6f2b674ec2a2eacc94a4742125.r2.dev"
+const APK_URL = "https://pub-4f089b6f2b674ec2a2eacc94a4742125.r2.dev/gobil181-2-5%20-%20Anita%20Anitaa.apk"
 
 const handleDownload = () => {
   const link = document.createElement("a")
