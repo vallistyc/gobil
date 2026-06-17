@@ -1,6 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import { TutorialModalProvider } from './cmp/TutorialModalContext'
+import InstallTutorialModal from './cmp/InstallTutorialModal'
+import TutorialFAB from './cmp/TutorialFAB'
 import Navbar from './cmp/Navbar'
 import Hero from './sct/Hero'
 import Service from './sct/Service'
@@ -13,13 +16,17 @@ import Cta from './sct/Cta'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Navbar />
-    <Hero />
-    <Banner/>
-    <Service/>
-    <Location/>
-    <Profile />
-    <Testimoni />
-    <Cta />
+    <TutorialModalProvider>
+      <Navbar />
+      <Hero />
+      <Banner/>
+      <Service/>
+      <Location/>
+      <Profile />
+      <Testimoni />
+      <Cta />
+      <InstallTutorialModal />
+      <TutorialFAB />
+    </TutorialModalProvider>
   </StrictMode>,
 )

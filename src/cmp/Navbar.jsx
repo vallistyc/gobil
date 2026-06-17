@@ -2,18 +2,21 @@ import React, { useState } from "react";
 import { Menu, X, Download } from "lucide-react";
 import Logo from '../assets/Logo.png';
 import DownloadButton from "./DownloadButton";
+import { useTutorialModal } from "./TutorialModalContext";
 
 const APK_URL = "https://download.gobil.my.id/gobil.apk"
 
-const ayoDownload = () => {
-  const link = document.createElement("a")
-  link.href = APK_URL
-  link.download = "Go-Bil.apk"
-  link.click()
-}
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { openTutorial } = useTutorialModal();
+
+  const ayoDownload = () => {
+    const link = document.createElement("a")
+    link.href = APK_URL
+    link.download = "Go-Bil.apk"
+    link.click()
+    openTutorial()
+  }
 
   const menu = [
     { label: "Beranda", href: "#beranda" },
