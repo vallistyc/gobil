@@ -9,7 +9,6 @@ import Location from './sct/Location'
 import Profile from './sct/Profile'
 import Testimoni from './sct/Testimoni'
 import Cta from './sct/Cta'
-import Footer from './sct/Footer'
 
 
 createRoot(document.getElementById('root')).render(
@@ -22,6 +21,5 @@ createRoot(document.getElementById('root')).render(
     <Profile />
     <Testimoni />
     <Cta />
-    <Footer />
   </StrictMode>,
 )

@@ -3,7 +3,7 @@ import React from 'react'
 const Card = ({img, txt, num}) => {
   return (
     <div 
-      className='relative flex-1 h-100 rounded-[20px] overflow-hidden flex flex-col justify-end shadow-sm'
+      className='relative min-h-[280px] sm:min-h-[360px] lg:h-100 rounded-[20px] overflow-hidden flex flex-col justify-end shadow-sm'
       style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
         {/* Nomor */}
@@ -21,7 +21,7 @@ const Card = ({img, txt, num}) => {
             boxShadow: '0px 4px 100px 30px rgba(0, 0, 0, 0.25)'
           }}
         >
-            <h2 className='font-outfit font-regular text-2xl leading-[30px] text-white w-[205px]'>
+            <h2 className='font-outfit font-regular text-xl sm:text-2xl leading-[30px] text-white max-w-[205px] pr-3'>
                 {txt}
             </h2>
         </div>

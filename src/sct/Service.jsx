@@ -8,8 +8,8 @@ const Service = () => {
   return (
     <section className='bg-[#FFF9EB] flex flex-col'>
         {/* Title */}
-        <div className='flex flex-row justify-between items-center px-30 py-5 gap-10'>
-            <h1 className='whitespace-nowrap font-outfit font-medium text-4xl text-[#FF6200]'>
+        <div className='flex flex-col md:flex-row justify-between md:items-center px-4 sm:px-8 lg:px-30 py-6 gap-3 md:gap-10'>
+            <h1 className='font-outfit font-medium text-3xl sm:text-4xl text-[#FF6200]'>
                 Pelayanan <span className='font-playfair font-bold underline'>Kami</span>
             </h1>
             <p className='text-[#5A5A5A] text-sm'>
@@ -18,7 +18,7 @@ const Service = () => {
         </div>
 
         {/* Cards */}
-        <div className='flex flex-row gap-2.5 px-30 pb-10 pt-3'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 sm:px-8 lg:px-30 pb-10 pt-3'>
             <Card img={card1} txt="Delivery Makanan & Minuman" num="01" />
             <Card img={card2} txt="Antar Barang ke Alamat Tujuan" num="02" />
             <Card img={card3} txt="Ojek di Area Pantura" num="03" />

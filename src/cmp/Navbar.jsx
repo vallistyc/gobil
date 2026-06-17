@@ -3,6 +3,15 @@ import { Menu, X, Download } from "lucide-react";
 import Logo from '../assets/Logo.png';
 import DownloadButton from "./DownloadButton";
 
+const APK_URL = "https://pub-4f089b6f2b674ec2a2eacc94a4742125.r2.dev/gobil181-2-5%20-%20Anita%20Anitaa.apk"
+
+const handleDownload = () => {
+  const link = document.createElement("a")
+  link.href = APK_URL
+  link.download = "Go-Bil.apk"
+  link.click()
+}
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full top-0 left-0 bg-white shadow-md z-50" aria-label="Primary navigation">
-      <div className="mx-auto px-10 py-3 flex justify-between items-center">
+      <div className="mx-auto px-4 sm:px-6 lg:px-10 py-3 flex justify-between items-center">
         
         {/* Logo */}
         <a href="#home" aria-label="Elsa home">
@@ -32,11 +41,14 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <DownloadButton size="sm"/>
+        <DownloadButton size="sm" className="hidden md:inline-flex"/>
 
         {/* Mobile Button */}
         <div className="flex items-center gap-4 md:hidden">
-          < Download color="#FFA500" />
+          <button onClick={handleDownload}>
+            < Download color="#FFA500"/>
+          </button>
+          
           <button
             type="button"
             aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}

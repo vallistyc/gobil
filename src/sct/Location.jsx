@@ -10,10 +10,10 @@ const Location = () => {
     ];
 
   return (
-    <section className='bg-[#FFF9EB] px-30 py-30 flex flex-row'>
+    <section className='bg-[#FFF9EB] px-4 sm:px-8 lg:px-30 py-12 lg:py-30 flex flex-col lg:flex-row gap-8 lg:gap-10'>
         {/* Left Content */}
-        <div className='text-[#5A5A5A] flex flex-col gap-3'>
-            <h1 className='font-outfit text-md font-medium text-4xl text-[#FF6200]'>
+        <div className='text-[#5A5A5A] flex flex-col gap-3 lg:w-[40%]'>
+            <h1 className='font-outfit font-medium text-3xl sm:text-4xl text-[#FF6200]'>
                 Keliling PANTURA? <br />
                 <span className='font-playfair font-bold italic'>Siapa Takut!</span>
             </h1>
@@ -30,7 +30,7 @@ const Location = () => {
         </div>
 
         {/* Right Content */}
-        <div className='flex relative h-100 w-200'>
+        <div className='flex relative h-[320px] sm:h-[420px] lg:h-100 w-full lg:flex-1 min-w-0'>
             <MapUI />
         </div>
     </section>
