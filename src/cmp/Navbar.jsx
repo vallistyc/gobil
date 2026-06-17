@@ -5,7 +5,7 @@ import DownloadButton from "./DownloadButton";
 
 const APK_URL = "https://pub-4f089b6f2b674ec2a2eacc94a4742125.r2.dev/gobil181-2-5%20-%20Anita%20Anitaa.apk"
 
-const handleDownload = () => {
+const ayoDownload = () => {
   const link = document.createElement("a")
   link.href = APK_URL
   link.download = "Go-Bil.apk"
@@ -45,7 +45,7 @@ const Navbar = () => {
 
         {/* Mobile Button */}
         <div className="flex items-center gap-4 md:hidden">
-          <button onClick={handleDownload}>
+          <button onClick={ayoDownload}>
             < Download color="#FFA500"/>
           </button>
           
