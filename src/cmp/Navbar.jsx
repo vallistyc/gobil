@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X, Download } from "lucide-react";
 import Logo from '../assets/Logo.png';
 import DownloadButton from "./DownloadButton";
@@ -19,9 +20,9 @@ const Navbar = () => {
   }
 
   const menu = [
-    { label: "Beranda", href: "#beranda" },
-    { label: "Mitra", href: "#profil" },
-    { label: "Jadi Driver", href: "#mitra" },
+    { label: "Beranda", href: "/" },
+    { label: "Mitra", href: "/mitra" },
+    { label: "Jadi Driver", href: "/driver" },
   ];
 
   return (
@@ -29,17 +30,17 @@ const Navbar = () => {
       <div className="mx-auto px-4 sm:px-6 lg:px-10 py-2 flex justify-between items-center">
         
         {/* Logo */}
-        <a href="#home" aria-label="Elsa home">
+        <Link to="/" aria-label="Gobil home">
           <img src={Logo} alt="Gobil Logo" className="h-10 w-auto" />
-        </a>
+        </Link>
 
         {/* Desktop Menu */}
         <ul className="text-sm hidden md:flex gap-8 text-gray-700 font-medium">
           {menu.map((item) => (
             <li key={item.label}>
-              <a href={item.href} className="transition hover:text-[#FF6200]">
+              <Link to={item.href} className="transition hover:text-[#FF6200]">
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -75,13 +76,13 @@ const Navbar = () => {
         <ul className="flex flex-col justify-center items-center pb-4 gap-4 text-gray-700 font-medium">
           {menu.map((item) => (
             <li key={item.label}>
-              <a
-                href={item.href}
+              <Link
+                to={item.href}
                 className="block transition hover:text-[#22C872]"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
