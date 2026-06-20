@@ -110,7 +110,7 @@ export default function Mitra() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10 space-y-16">
+    <div className="max-w-3xl mx-auto px-4 py-20 space-y-16">
       {/* ===== LIST MITRA ===== */}
       <section>
         <h2 className="text-2xl font-bold text-slate-800 mb-4">Mitra Go-Bil</h2>
