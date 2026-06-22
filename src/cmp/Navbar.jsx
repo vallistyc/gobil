@@ -5,7 +5,7 @@ import Logo from '../assets/Logo.png';
 import DownloadButton from "./DownloadButton";
 import { useTutorialModal } from "./TutorialModalContext";
 
-const APK_URL = "https://download.gobil.my.id/gobil.apk"
+const APK_URL = "https://download.gobil.my.id/gobildeliv.apk"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

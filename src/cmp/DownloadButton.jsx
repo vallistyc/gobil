@@ -3,7 +3,7 @@ import { Download } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { useTutorialModal } from "./TutorialModalContext"
 
-const APK_URL = "https://download.gobil.my.id/gobil.apk"
+const APK_URL = "https://download.gobil.my.id/gobildeliv.apk"
 
 const DownloadButton = ({size, className = ""}) => {
   const { openTutorial } = useTutorialModal()
