@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react"
 import { X, ImageOff, AlertTriangle, CheckCircle2 } from "lucide-react"
 import { useTutorialModal } from "./TutorialModalContext"
+import step1 from "../assets/1.png"
+import step2 from "../assets/2.png"
+import step3 from "../assets/3.png"
+import step4 from "../assets/4.png"
+import step5 from "../assets/5.png"
+import step6 from "../assets/7.png"
+import step7 from "../assets/6.png"
+
 
 // ── Data langkah-langkah ──────────────────────────────────────────────
 // Ganti `image` di bawah dengan path screenshot asli kamu setelah diunggah,
@@ -13,14 +21,14 @@ const steps = [
     title: "Buka file APK-nya",
     description:
       "Setelah download selesai, ketuk notifikasi unduhan, atau buka folder Unduhan/Downloads di File Manager, lalu cari file Go-Bil.apk.",
-    image: "/assets/tutorial/step-1-notifikasi.png",
+    image: step1,
     alt: "Notifikasi download Go-Bil.apk muncul di HP Android",
   },
   {
     number: 2,
     title: "Ketuk file untuk mulai install",
     description: "Ketuk file Go-Bil.apk. Layar konfirmasi pemasangan akan muncul.",
-    image: "/assets/tutorial/step-2-tap-file.png",
+    image: step2,
     alt: "Dialog konfirmasi install aplikasi Go-Bil",
     branch: {
       title: 'Muncul peringatan "sumber tidak dikenal"?',
@@ -29,17 +37,17 @@ const steps = [
       substeps: [
         {
           label: 'Ketuk "Setelan" pada peringatan tersebut',
-          image: "/assets/tutorial/step-2a-setelan.png",
+          image: step3,
           alt: "Tombol Setelan pada peringatan sumber tidak dikenal",
         },
         {
           label: 'Aktifkan toggle "Izinkan dari sumber ini"',
-          image: "/assets/tutorial/step-2b-izinkan.png",
+          image: step4,
           alt: "Toggle izinkan install dari sumber tidak dikenal diaktifkan",
         },
         {
           label: "Ketuk tombol kembali, lalu ketuk file Go-Bil.apk sekali lagi",
-          image: "/assets/tutorial/step-2c-kembali.png",
+          image: step5,
           alt: "Kembali ke file manager untuk membuka APK lagi",
         },
       ],
@@ -49,14 +57,14 @@ const steps = [
     number: 3,
     title: 'Ketuk "Pasang" / "Install"',
     description: "Tunggu beberapa detik sampai proses instalasi selesai.",
-    image: "/assets/tutorial/step-3-install.png",
+    image: step6,
     alt: "Tombol Install pada dialog pemasangan aplikasi",
   },
   {
     number: 4,
     title: 'Ketuk "Buka" dan Go-Bil siap dipakai',
     description: "Selesai! Aplikasi Go-Bil sudah terpasang di HP kamu.",
-    image: "/assets/tutorial/step-4-buka.png",
+    image: step7,
     alt: "Tombol Buka setelah instalasi Go-Bil selesai",
   },
 ]
