@@ -111,7 +111,7 @@ export default function Driver() {
           <h3 className="font-semibold text-slate-800 mb-2">Persyaratan</h3>
           <ul className="list-disc list-inside text-sm text-slate-600 space-y-1">
             <li>Minimal usia 18 tahun, memiliki KTP/KTS aktif</li>
-            <li>Memiliki SIM C atau SIM A yang masih berlaku</li>
+            <li>Memiliki SIM C atau SIM A yang masih berlaku <span className="font-bold">(OPSIONAL)</span></li>
             <li>Kendaraan pribadi dengan STNK aktif, kondisi layak jalan</li>
             <li>Memiliki smartphone Android dengan koneksi internet stabil</li>
             <li>Memiliki rekening tabungan atau e-wallet aktif untuk pencairan saldo</li>
@@ -122,7 +122,7 @@ export default function Driver() {
           <h3 className="font-semibold text-slate-800 mb-2">Dokumen yang Dibutuhkan</h3>
           <ul className="list-disc list-inside text-sm text-slate-600 space-y-1">
             <li>KTP / KTS</li>
-            <li>SIM C</li>
+            <li>SIM C atau A <span className="font-bold">(OPSIONAL)</span></li>
             <li>STNK</li>
             <li>Foto kendaraan</li>
             <li>Pas foto terbaru</li>
@@ -173,7 +173,6 @@ export default function Driver() {
           <FileDropInput
             label="Foto SIM"
             name="sim"
-            required
             error={errors.sim}
             onChange={(v) => setFiles((f) => ({ ...f, sim: v }))}
           />
@@ -200,7 +199,7 @@ export default function Driver() {
           />
 
           {/* ===== Metode Pencairan: pilih salah satu, exclusive ===== */}
-          <div className="space-y-3">
+          <div className="space-y-3 flex flex-col gap-2">
             <label className="text-sm font-medium text-slate-700">
               Metode Pencairan <span className="text-red-500">*</span>
             </label>

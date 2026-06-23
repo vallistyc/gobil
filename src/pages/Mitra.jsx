@@ -111,23 +111,6 @@ export default function Mitra() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-20 space-y-16">
-      {/* ===== LIST MITRA ===== */}
-      <section>
-        <h2 className="text-2xl font-bold text-slate-800 mb-4">Mitra Go-Bil</h2>
-        {loadingList ? (
-          <p className="text-slate-400 text-sm">Memuat daftar mitra...</p>
-        ) : mitraList.length === 0 ? (
-          <p className="text-slate-400 text-sm">Belum ada mitra yang ditampilkan.</p>
-        ) : (
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            {mitraList.map((m) => (
-              <div key={m._id} className="border rounded-xl p-3 text-center">
-                <p className="font-medium text-sm">{m.namaBisnis}</p>
-              </div>
-            ))}
-          </div>
-        )}
-      </section>
 
       {/* ===== FORM PENDAFTARAN MITRA ===== */}
       <section>
