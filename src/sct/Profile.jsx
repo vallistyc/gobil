@@ -30,7 +30,7 @@ const Profile = () => {
 
             {/* Right Content */}
             <div>
-                <img src={OP} alt="Apa itu Go-Bil" className='rounded-md w-full lg:w-100 max-h-[320px] lg:max-h-none object-cover overflow-hidden' />
+                <img src={OP} alt="Apa itu Go-Bil" className='rounded-md w-full lg:w-100 max-h-[320px] lg:max-h-none object-cover overflow-hidden' loading='lazy' />
             </div>
 
             {/* Left Content */}

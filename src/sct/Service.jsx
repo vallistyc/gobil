@@ -1,8 +1,8 @@
 import React from 'react'
 import Card from '@/cmp/Card'
-import card1 from '../assets/card1.png'
-import card2 from '../assets/card2.png'
-import card3 from '../assets/card3.png'
+import card1 from '../assets/card1.jpg'
+import card2 from '../assets/card2.jpg'
+import card3 from '../assets/card3.jpg'
 
 const Service = () => {
   return (
@@ -19,7 +19,7 @@ const Service = () => {
 
         {/* Cards */}
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-20 sm:px-8 lg:px-30 pb-10 pt-3'>
-            <Card img={card1} txt="Delivery Makanan & Minuman" num="01" />
+            <Card img={card1} txt="Delivery Makanan & Minuman" num="01"  />
             <Card img={card2} txt="Antar Barang ke Alamat Tujuan" num="02" />
             <Card img={card3} txt="Ojek di Area Pantura" num="03" />
         </div>
