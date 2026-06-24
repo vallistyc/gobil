@@ -110,7 +110,7 @@ export default function Driver() {
         <div>
           <h3 className="font-semibold text-slate-800 mb-2">Persyaratan</h3>
           <ul className="list-disc list-inside text-sm text-slate-600 space-y-1">
-            <li>Minimal usia 18 tahun, memiliki KTP/KTS aktif</li>
+            <li>Minimal usia 18 tahun, memiliki KTP (Kartu Tanda Penduduk) / KTS (Kartu Tanda Siswa) aktif</li>
             <li>Memiliki SIM C atau SIM A yang masih berlaku <span className="font-bold">(OPSIONAL)</span></li>
             <li>Kendaraan pribadi dengan STNK aktif, kondisi layak jalan</li>
             <li>Memiliki smartphone Android dengan koneksi internet stabil</li>
